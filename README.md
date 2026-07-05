@@ -19,6 +19,9 @@ Je suis **Khadija El Merahy**, étudiant en 4e année d'Ingénierie à **l'ENSA 
 Passionné par le **Data Engineering**, le **Cloud Computing** et l'**IA**, j'aime concevoir et déployer des **pipelines de données scalables** et des **systèmes de production robustes**.
 
 ### Expérience Professionnelle
+**Data Engineering Intern** | Banque Centrale Populaire | Juillet 2026-Aujourd'hui
+-  Stage au sein de l'entité Data Engineering, Data Mining & Delivery de la Banque Centrale Populaire.
+- Participation à la conception et au développement d'un projet combinant les technologies Big Data et Machine Learning.
 
 **Data & AI Intern** | Residences Dar Saada | Juillet 2025
 -  Conception d’un système multi-agents(5 agents IA)dédiéàl’automatisation de l’ingestion et du requêtage de données complexes
