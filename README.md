@@ -153,20 +153,6 @@ Passionnée par le cycle de vie complet de la donnée, je conçois et déploie d
 
 ---
 
-## 5️⃣ 🚗 [VisionPlate Pro – Détection & Reconnaissance de Plaques Marocaines](https://github.com/elmerahykhadija/plaque_matricule_project)
-
-**Contexte & Problème** : Automatiser la détection et la lecture optique (OCR) des plaques d'immatriculation marocaines via Computer Vision.
-
-**Architecture** : Modèle de détection d'objets **YOLOv8** couplé à des traitements de vision par ordinateur (**OpenCV**) et une interface utilisateur temps réel sous **Streamlit**.
-
-**Résultats** : Reconnaissance rapide et robuste des caractères sous conditions visuelles variées.
-
-<p align="center">
-  <img src="./images/car.png" alt="VisionPlate Pro Architecture" width="850">
-</p>
-
----
-
 # 🎓 Formation & Certifications
 
 ## 🎓 Éducation
