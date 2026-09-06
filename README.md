@@ -1,4 +1,4 @@
-# 📊 Portfolio - Data & AI Engineer
+# 📊 Portfolio - Big Data & AI Engineer
 
 Bienvenue dans mon portfolio ! Découvrez mes projets, compétences et réalisations dans les domaines du **Data Engineering**, du **Big Data**, de l'**Architecture Cloud** et de l'**Intelligence Artificielle**.
 
@@ -95,57 +95,102 @@ Passionnée par le cycle de vie complet de la donnée, je conçois et déploie d
 
 ---
 
-## 🚀 Projets Clés
+# 🚀 Mes Projets
 
-### 1️⃣ 🎟️ [End-to-End Cloud-Native ELT Pipeline](https://github.com/elmerahykhadija/ELT-pipline-ticketmaster)
-* **Contexte** : Pipeline moderne pour ingérer, centraliser et transformer plus de **50 000 événements quotidiens** de l'API Ticketmaster en données prêtes pour la BI.
-* **Architecture** : Ingestion API → Apache Kafka → Snowflake (RAW) → dbt (Star Schema & modélisation dimensionnelle), orchestré par **Apache Airflow** et automatisé via **CI/CD GitHub Actions** sur **AWS EC2** sous **Docker**.
-* **Lien** : [Consulter le code source](https://github.com/elmerahykhadija/ELT-pipline-ticketmaster)
+## 1️⃣ 🎟️ [End-to-End Cloud-Native ELT Pipeline – Ticketmaster](https://github.com/elmerahykhadija/ELT-pipline-ticketmaster)
 
-### 2️⃣ 🧠 [Solution MLOps de Bout en Bout – HR Attrition Analytics](https://github.com/elmerahykhadija/hr-analytics-project)
-* **Contexte** : Transformation d'une gestion RH réactive en stratégie prédictive proactive via l'analyse du turnover sur **1 400+ collaborateurs**.
-* **Architecture** : CSV → Snowflake → dbt → Great Expectations → Scikit-learn + MLflow (précision **86%+**) → Détection de drift (Evidently AI) → Explicabilité et simulations What-If avec **DiCE** intégrées à un dashboard **Dash**.
-* **Lien** : [Consulter le code source](https://github.com/elmerahykhadija/hr-analytics-project)
+**Contexte & Problème** : Collecter, centraliser et transformer plus de **50 000 événements quotidiens** depuis l'API Ticketmaster pour en extraire des insights analytiques fiables.
 
-### 3️⃣ 🛒 [Architecture Médaillon E-Commerce Data Pipeline](https://github.com/elmerahykhadija/e-commerce-data-pipeline)
-* **Contexte** : Transformation de **+200k commandes e-commerce** brutes en datasets analytiques haute performance.
-* **Architecture** : Traitement distribué via **PySpark** → Stockage Data Lake **AWS S3** → **Snowflake**, structuré selon une architecture Médaillon (**Bronze / Silver / Gold**) et orchestré de bout en bout avec **Airflow**.
-* **Lien** : [Consulter le code source](https://github.com/elmerahykhadija/e-commerce-data-pipeline)
+**Architecture** : Ingestion API → Apache Kafka → Snowflake (RAW) → dbt (Star Schema), orchestré par Apache Airflow et déployé sur AWS EC2 via Docker avec automatisation CI/CD GitHub Actions.
 
-### 4️⃣ 📡 [Real-Time Streaming Pipeline – Annonces Immobilières Maroc](https://github.com/elmerahykhadija/projet-annonces)
-* **Contexte** : Scraping et agrégation en streaming continu des annonces immobilières marocaines (Avito, MarocAnnonces) avec filtrage analytique instantané.
-* **Architecture** : Scraping multi-sources → **Apache Kafka** → **Spark Streaming** → **MySQL** → Dashboard interactif temps réel **Streamlit** sous conteneurs Docker.
-* **Lien** : [Consulter le code source](https://github.com/elmerahykhadija/projet-annonces)
+**Résultats** : Pipeline ELT scalable et automatisé de bout en bout, données immédiatement prêtes pour la BI.
 
-### 5️⃣ 🚗 [VisionPlate Pro – Détection & OCR de Plaques Marocaines](https://github.com/elmerahykhadija/plaque_matricule_project)
-* **Contexte** : Système intelligent de détection automatique et de reconnaissance optique de caractères (OCR) sur les plaques d'immatriculation marocaines.
-* **Architecture** : Modèle de Deep Learning basé sur **YOLOv8** & **OpenCV**, interfacé avec **Streamlit** pour la détection et la lecture en temps réel.
-* **Lien** : [Consulter le code source](https://github.com/elmerahykhadija/plaque_matricule_project)
+<p align="center">
+  <img src="./images/elt.png" alt="Ticketmaster ELT Pipeline Architecture" width="850">
+</p>
 
 ---
 
-## 🎓 Formation & Certifications
+## 2️⃣ 🧠 [Production-Ready MLOps Pipeline – HR Attrition Analytics](https://github.com/elmerahykhadija/hr-analytics-project)
 
-### 🎓 Éducation
-- **Cycle d'Ingénieur : Systèmes d'Information & Big Data** | *ENSA Berrechid (2024 – Présent)*
-- **Classes Préparatoires Intégrées** | *ENSA Berrechid (2022 – 2024)*
+**Contexte & Problème** : Passer d'une gestion RH réactive à une stratégie proactive en identifiant le risque de turnover sur **1 400+ profils collaborateurs**.
 
-### 📜 Certifications
-- 🏆 **SQL (Advanced Level)** – HackerRank
-- 📊 **Data Science & Machine Learning MasterClass** – Udemy
-- ☁️ **Introduction to Databricks** – DataCamp
-- ☁️ **Understanding Microsoft Azure** – DataCamp
-- 🌪️ **Introduction to Apache Airflow** – DataCamp
-- 🛠️ **Introduction to dbt** – DataCamp
+**Architecture** : CSV → Snowflake → dbt (GOLD) → Great Expectations → Scikit-learn + MLflow (précision **86%+**) → Evidently AI (Data Drift) → Dashboard interactif Dash avec simulations What-If (DiCE).
+
+**Résultats** : Prédiction précise des départs, réentraînement automatique et explicabilité des décisions de fidélisation.
+
+<p align="center">
+  <img src="./images/mlops.png" alt="MLOps HR Analytics Pipeline Architecture" width="850">
+</p>
+
+---
+
+## 3️⃣ 🛒 [E-Commerce Data ETL Pipeline (Architecture Médaillon)](https://github.com/elmerahykhadija/e-commerce-data-pipeline)
+
+**Contexte & Problème** : Nettoyer et structurer plus de **200k commandes brutes** en tables analytiques haute performance.
+
+**Architecture** : Python + Apache Spark (traitement distribué) → Data Lake AWS S3 → Snowflake, structuré selon le pattern **Médaillon (Bronze / Silver / Gold)** et orchestré par Airflow.
+
+**Résultats** : Entrepôt de données modélisé, prêt pour la modélisation dimensionnelle et le reporting décisionnel.
+
+<p align="center">
+  <img src="./images/etl.png" alt="E-Commerce ETL Medallion Architecture" width="850">
+</p>
+
+---
+
+## 4️⃣ 🎯 [Real-Time Streaming Pipeline – Annonces Immobilières Maroc](https://github.com/elmerahykhadija/projet-annonces)
+
+**Contexte & Problème** : Agréger en temps réel des annonces immobilières marocaines (Avito, MarocAnnonces) avec filtrage instantané par budget, catégorie et ville.
+
+**Architecture** : Scraping Python → Apache Kafka → Apache Spark Streaming → MySQL → Interface Streamlit, déployé sous conteneurs Docker.
+
+**Résultats** : Ingestion et traitement de flux d'annonces en temps réel avec tableau de bord interactif.
+
+<p align="center">
+  <img src="./images/streaming.png" alt="Real-Time Streaming Architecture" width="850">
+</p>
+
+---
+
+## 5️⃣ 🚗 [VisionPlate Pro – Détection & Reconnaissance de Plaques Marocaines](https://github.com/elmerahykhadija/plaque_matricule_project)
+
+**Contexte & Problème** : Automatiser la détection et la lecture optique (OCR) des plaques d'immatriculation marocaines via Computer Vision.
+
+**Architecture** : Modèle de détection d'objets **YOLOv8** couplé à des traitements de vision par ordinateur (**OpenCV**) et une interface utilisateur temps réel sous **Streamlit**.
+
+**Résultats** : Reconnaissance rapide et robuste des caractères sous conditions visuelles variées.
+
+<p align="center">
+  <img src="./images/car.png" alt="VisionPlate Pro Architecture" width="850">
+</p>
+
+---
+
+# 🎓 Formation & Certifications
+
+## 🎓 Éducation
+* **Cycle d'Ingénieur : Systèmes d'Information & Big Data** | ENSA Berrechid *(2024 – Présent)*
+* **Classes Préparatoires Intégrées** | ENSA Berrechid *(2022 – 2024)*
+
+---
+
+## 📜 Certifications
+* 🏆 **SQL (Advanced Level)** – HackerRank
+* 📊 **Data Science & Machine Learning MasterClass** – Udemy
+* ☁️ **Introduction to Databricks** – DataCamp
+* ☁️ **Understanding Microsoft Azure** – DataCamp
+* 🌪️ **Introduction to Apache Airflow** – DataCamp
+* 🛠️ **Introduction to dbt** – DataCamp
 
 ---
 
 ## 🎯 Objectif Professionnel
-Actuellement en dernière année d'ingénierie, je suis à la recherche d'un **Stage de Fin d'Études (PFE / Pré-embauche)** à partir de **Janvier 2027** en tant que **Data Engineer**, **Big Data Engineer** ou **MLOps / AI Engineer**. N'hésitez pas à me contacter pour échanger sur des opportunités !
+Actuellement en dernière année d'ingénierie, je suis à la recherche d'un **Stage de Fin d'Études (PFE / Pré-embauche)** à partir de **Janvier 2027** en tant que **Data Engineer**, **Big Data Engineer** ou **MLOps / AI Engineer**.
 
 ---
 
-## 🌍 Langues
-- 🇬🇧 **Anglais** : B2 (Avancé / Technique)
-- 🇫🇷 **Français** : B2 (Courant)
-- 🇲🇦 **Arabe** : Natif
+# 🌍 Langues
+* 🇬🇧 **Anglais** : B2 (Technique)
+* 🇫🇷 **Français** : B2 (Courant)
+* 🇲🇦 **Arabe** : Natif
